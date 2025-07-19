@@ -1,45 +1,85 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Obras | Lavadero Charly</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Obras y Remodelaciones | Lavadero Charly</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <style>
     * {
-      margin: 0; padding: 0; box-sizing: border-box; font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
     }
+
     body {
-      background-color: #fff; color: #000;
+      background-color: #fff;
+      color: #000;
     }
+
     header {
-      background-color: #000; color: #fff; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center;
+      background-color: #000;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
+
     .logo {
-      font-size: 1.5rem; font-weight: 700; color: #ff0000;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #ff0000;
     }
+
     nav a {
-      color: #fff; margin-left: 1rem; text-decoration: none; font-weight: 500;
+      color: #fff;
+      margin-left: 1rem;
+      text-decoration: none;
+      font-weight: 500;
     }
+
     section {
-      padding: 4rem 2rem; max-width: 1100px; margin: auto;
+      padding: 4rem 2rem;
+      max-width: 1100px;
+      margin: auto;
     }
+
     h2 {
-      color: #ff0000; margin-bottom: 2rem; text-align: center;
+      color: #ff0000;
+      margin-bottom: 2rem;
+      text-align: center;
     }
-    .galeria {
+
+    .img-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-      gap: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
     }
-    .galeria img {
-      width: 100%; border-radius: 8px;
+
+    .img-grid img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
+
     footer {
-      background: #000; color: #fff; padding: 2rem; text-align: center; margin-top: 4rem;
+      background: #000;
+      color: #fff;
+      padding: 2rem;
+      text-align: center;
+      margin-top: 4rem;
+    }
+
+    a {
+      color: #ff0000;
+      text-decoration: none;
     }
   </style>
 </head>
+
 <body>
   <header>
     <div class="logo">LAVADERO CHARLY</div>
@@ -54,11 +94,18 @@
   </header>
 
   <section>
-    <h2>Construcciones y Remodelaciones</h2>
-    <p>Seguimos creciendo para brindarte un mejor servicio. Mirá cómo fue nuestro proceso:</p>
-    <div class="galeria">
-      <img src="https://via.placeholder.com/400x300?text=Obra+1" alt="Obra 1" />
-      <img src="https://via.placeholder.com/400x300?text=Obra+2" alt="Obra 2" />
+    <h2>Obras y Remodelaciones</h2>
+    <p style="text-align: center; margin-bottom: 2rem;">
+      En Lavadero Charly renovamos y mejoramos constantemente nuestras instalaciones para brindar un mejor servicio. <br>
+      Mirá algunas de las remodelaciones más importantes realizadas.
+    </p>
+    <div class="img-grid">
+      <img src="../img/PHOTO-2025-02-19-07-34-44(1).jpg" alt="Obra 1">
+      <img src="../img/PHOTO-2025-02-19-07-34-43(3).jpg" alt="Obra 2">
+      <img src="../img/PHOTO-2025-02-19-07-34-43(2).jpg" alt="Obra 3">
+      <img src="../img/PHOTO-2025-02-19-07-34-41(1).jpg" alt="Obra 4">
+      <img src="../img/PHOTO-2025-02-19-07-34-39.jpg" alt="Obra 5">
+      <img src="../img/remodelacion4.jpg" alt="Obra 6">
     </div>
   </section>
 
@@ -66,4 +113,6 @@
     <p>&copy; 2025 Lavadero de Camiones. Todos los derechos reservados.</p>
   </footer>
 </body>
+
 </html>
+
