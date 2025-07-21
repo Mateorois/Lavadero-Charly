@@ -2,10 +2,10 @@
 <html lang="es">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Obras y Remodelaciones | Lavadero Charly</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Remodelaciones | Lavadero Charly</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
   <style>
     * {
       margin: 0;
@@ -53,16 +53,37 @@
       text-align: center;
     }
 
-    .img-grid {
+    .galeria {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 1.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
     }
 
-    .img-grid img {
+    .tarjeta {
+      background: #f5f5f5;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .tarjeta:hover {
+      transform: scale(1.02);
+    }
+
+    .tarjeta img {
       width: 100%;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      height: 200px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .tarjeta p {
+      padding: 1rem;
+      font-size: 0.95rem;
+      color: #333;
     }
 
     footer {
@@ -71,11 +92,6 @@
       padding: 2rem;
       text-align: center;
       margin-top: 4rem;
-    }
-
-    a {
-      color: #ff0000;
-      text-decoration: none;
     }
   </style>
 </head>
@@ -94,25 +110,34 @@
   </header>
 
   <section>
-    <h2>Obras y Remodelaciones</h2>
-    <p style="text-align: center; margin-bottom: 2rem;">
-      En Lavadero Charly renovamos y mejoramos constantemente nuestras instalaciones para brindar un mejor servicio. <br>
-      Mirá algunas de las remodelaciones más importantes realizadas.
-    </p>
-    <div class="img-grid">
-      <img src="../img/PHOTO-2025-02-19-07-34-44(1).jpg" alt="Obra 1">
-      <img src="../img/PHOTO-2025-02-19-07-34-43(3).jpg" alt="Obra 2">
-      <img src="../img/PHOTO-2025-02-19-07-34-43(2).jpg" alt="Obra 3">
-      <img src="../img/PHOTO-2025-02-19-07-34-41(1).jpg" alt="Obra 4">
-      <img src="../img/PHOTO-2025-02-19-07-34-39.jpg" alt="Obra 5">
-      <img src="../img/remodelacion4.jpg" alt="Obra 6">
+    <h2>Remodelaciones y Mejoras</h2>
+    <div class="galeria">
+      <div class="tarjeta">
+        <img src="../img/WhatsApp Image 2025-07-19 at 17.30.53.jpeg" alt="">
+        <p>Cuando empezo era una sola playa.</p>
+      </div>
+      <div class="tarjeta">
+        <img src="../img/PHOTO-2025-02-19-07-34-44(1).jpg" alt="">
+        <p>Luego tiramos piedras a lado para hacer una nueva.</p>
+      </div>
+      <div class="tarjeta">
+        <img src="../img/PHOTO-2025-02-19-07-34-42.jpg" alt="">
+        <p>Hicimos una pared y colocamos tierra encima de las piedras.</p>
+      </div>
+      <div class="tarjeta">
+        <img src="../img/PHOTO-2025-02-19-07-34-39.jpg" alt="">
+        <p>Como pasos finales colocamos las mallas y terminamos el piso con cemento.</p>
+      </div>
+      <div class="tarjeta">
+        <img src="../img/PHOTO-2025-02-19-07-34-38.jpg" alt="">
+        <p>Asi es como quedo.</p>
+      </div>
     </div>
   </section>
 
   <footer>
-    <p>&copy; 2025 Lavadero de Camiones. Todos los derechos reservados.</p>
+    <p>&copy; 2025 Lavadero Charly. Todos los derechos reservados.</p>
   </footer>
 </body>
 
 </html>
-
