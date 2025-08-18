@@ -20,52 +20,61 @@
       color: #000;
     }
 
-       /* Estilos para el HEADER mejorado */
     header {
-      background-color: black;
-      padding: 10px 20px;
-    }
+    background-color: black;
+    padding: 10px 20px;
+  }
 
-    .header-top {
-      display: flex;
-      justify-content: space-between;
-      align-items: center; /* Alinea verticalmente los elementos */
-      margin-bottom: 15px;
-    }
+  .header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Alinea verticalmente los elementos */
+    margin-bottom: 15px;
+  }
 
+  .header-top h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    flex-grow: 1; /* Permite que ocupe todo el espacio disponible */
+    margin: 0; /* Elimina cualquier margen predeterminado */
+  }
+
+  .header-top img {
+    height: 50px;
+    width: auto; /* Mantiene la proporción de la imagen */
+  }
+
+  nav {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente los enlaces */
+    align-items: center;
+    gap: 40px; /* Espacio uniforme entre los enlaces */
+  }
+
+  nav a {
+    color: #a80303;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+  }
+
+  nav a:hover {
+    color: #ff5555; /* Cambia de color al pasar el cursor */
+  }
+  
+  /* Media queries para adaptar el diseño a pantallas más pequeñas */
+  @media (max-width: 768px) {
     .header-top h1 {
-      font-size: 2rem;
-      font-weight: bold;
-      color: white;
-      text-align: center;
-      flex-grow: 1; /* Permite que ocupe todo el espacio disponible */
-      margin: 0;
-    }
-
-    .header-top img {
-      height: 50px;
-      width: auto; /* Mantiene la proporción de la imagen */
+      font-size: 1.5rem;
     }
 
     nav {
-      display: flex;
-      justify-content: center; /* Centra horizontalmente los enlaces */
-      align-items: center;
-      gap: 40px; /* Espacio uniforme entre los enlaces */
+      flex-direction: column;
+      gap: 10px;
     }
-
-    nav a {
-      color: #a80303;
-      text-decoration: none;
-      font-weight: 500;
-      transition: color 0.3s ease-in-out;
-    }
-
-    nav a:hover {
-      color: #ff5555; /* Cambia de color al pasar el cursor */
-    }
-
-
+  }
 
     section {
       padding: 4rem 2rem;
@@ -132,9 +141,9 @@
 <body>
  <header>
   <div class="header-top">
-    <img src="img/logo1.jpeg" alt="Logo izquierda">
+    <img src="../img/logo1.jpeg" alt="Logo izquierda">
     <h1>LAVADERO CHARLY</h1>
-    <img src="img/logo1.jpeg" alt="Logo derecha">
+    <img src="../img/logo1.jpeg" alt="Logo derecha">
   </div>
   <nav>
     <a href="../index.html">INICIO</a>
