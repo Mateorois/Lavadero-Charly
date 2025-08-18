@@ -1,56 +1,153 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nuestro trabajo | Lavadero Charly</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-<style>
-    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Montserrat', sans-serif; }
-    body { background-color: #fff; color: #000; }
-    header { background-color: #000; color: #fff; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; }
-    .logo { font-size: 1.5rem; font-weight: 700; color: #ff0000; }
-    nav a { color: #fff; margin-left: 1rem; text-decoration: none; font-weight: 500; }
-    section { padding: 4rem 2rem; max-width: 1100px; margin: auto; }
-    h2 { color: #ff0000; margin-bottom: 2rem; text-align: center; }
-    .galeria { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; }
-    .galeria img { width: 100%; border-radius: 8px; object-fit: cover; height: 200px; }
-    footer { background: #000; color: #fff; padding: 2rem; text-align: center; margin-top: 4rem; }
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    body {
+      background-color: #fff;
+      color: #000;
+    }
+
+    /* Estilos para el HEADER mejorado */
+    header {
+      background-color: black;
+      padding: 10px 20px;
+    }
+
+    .header-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      /* Alinea verticalmente los elementos */
+      margin-bottom: 15px;
+    }
+
+    .header-top h1 {
+      font-size: 2rem;
+      font-weight: bold;
+      color: white;
+      text-align: center;
+      flex-grow: 1;
+      /* Permite que ocupe todo el espacio disponible */
+      margin: 0;
+    }
+
+    .header-top img {
+      height: 50px;
+      width: auto;
+      /* Mantiene la proporción de la imagen */
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      /* Centra horizontalmente los enlaces */
+      align-items: center;
+      gap: 40px;
+      /* Espacio uniforme entre los enlaces */
+    }
+
+    nav a {
+      color: #a80303;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease-in-out;
+    }
+
+    nav a:hover {
+      color: #ff5555;
+      /* Cambia de color al pasar el cursor */
+    }
+
+
+    section {
+      padding: 4rem 2rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #ff0000;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    .galeria {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+
+    .galeria img {
+      width: 100%;
+      border-radius: 8px;
+      object-fit: cover;
+      height: 200px;
+    }
+
+    footer {
+      background: #000;
+      color: #fff;
+      padding: 2rem;
+      text-align: center;
+      margin-top: 4rem;
+    }
   </style>
 </head>
+
 <body>
   <header>
-    <div class="logo">LAVADERO CHARLY</div>
-    <nav>
-      <a href="../index.html">Inicio</a>
-      <a href="servicios.html">Servicios</a>
-      <a href="contacto.html">Contacto</a>
-      <a href="reseñas.html">Reseñas</a>
-      <a href="nuestrotrabajo.html">Nuestro Trabajo</a>
-      <a href="remodelaciones.html">Obras</a>
-      <a href="servicios-extra.html">Extras</a>
-    </nav>
-  </header>
+  <div class="header-top">
+    <img src="img/logo1.jpeg" alt="Logo izquierda">
+    <h1>LAVADERO CHARLY</h1>
+    <img src="img/logo1.jpeg" alt="Logo derecha">
+  </div>
+  <nav>
+    <a href="../index.html">INICIO</a>
+    <a href="../pages/servicios.html">SERVICIOS</a>
+    <a href="../pages/contacto.html">CONTACTO</a>
+    <a href="../pages/reseñas.html">RESEÑAS</a>
+    <a href="../pages/nuestrotrabajo.html">NUESTRO TRABAJO</a>
+    <a href="../pages/remodelaciones.html">OBRAS</a>
+    <a href="../pages/servicios-extra.html">EXTRAS</a>
+  </nav>
+</header>
+
 
   <section>
     <h2>Nuestro trabajo</h2>
     <p>Te mostramos parte del trabajo que realizamos con dedicacion y compromiso</p>
-  
-    <div class="galeria">
-     <video controls width="100%" style="border-radius: 8px; object-fit: cover;"src="../img/VIDEO-2025-07-11-19-52-23.mov"></video>
-     <video controls width="100%" style="border-radius: 8px; object-fit: cover; "src="../img/VIDEO-2025-03-26-18-10-11.mp4"></video>
-     <video controls width="100%" style="border-radius: 8px; object-fit: cover;"src="../img/VIDEO-2025-03-15-18-51-29.mp4"></video>
-     <video controls width="100%" style="border-radius: 8px; object-fit: cover;"src="../img/VIDEO-2025-06-19-21-32-48.mp4"></video>
 
-    <img src="/img/PHOTO-2024-08-20-21-14-21.jpg" alt="Camión lavado 1">
-    <img src="/img/PHOTO-2025-03-26-18-10-09.jpg" alt="Camión lavado 2">
-    <img src="/img/PHOTO-2025-03-26-18-10-12.jpg" alt="Camión lavado 3">
-    <img src="/img/PHOTO-2025-03-26-18-10-10.jpg" alt="Camión lavado 4">
-    <img src="/img/PHOTO-2024-12-23-12-45-11.jpg" alt="Camión lavado 5">
-    <img src="/img/PHOTO-2024-12-23-12-45-11(1).jpg" alt="Camión lavado 6">
-    <img src="/img/PHOTO-2024-12-23-12-45-10.jpg" alt="Camión lavado 7">
-    <img src="/img/PHOTO-2024-09-14-18-08-27.jpg" alt="Camión lavado 8">
+    <div class="galeria">
+      <video controls width="100%" style="border-radius: 8px; object-fit: cover;"
+        src="../img/VIDEO-2025-07-11-19-52-23.mov"></video>
+      <video controls width="100%" style="border-radius: 8px; object-fit: cover; "
+        src="../img/VIDEO-2025-03-26-18-10-11.mp4"></video>
+      <video controls width="100%" style="border-radius: 8px; object-fit: cover;"
+        src="../img/VIDEO-2025-03-15-18-51-29.mp4"></video>
+      <video controls width="100%" style="border-radius: 8px; object-fit: cover;"
+        src="../img/VIDEO-2025-06-19-21-32-48.mp4"></video>
+
+      <img src="/img/PHOTO-2024-08-20-21-14-21.jpg" alt="Camión lavado 1">
+      <img src="/img/PHOTO-2025-03-26-18-10-09.jpg" alt="Camión lavado 2">
+      <img src="/img/PHOTO-2025-03-26-18-10-12.jpg" alt="Camión lavado 3">
+      <img src="/img/PHOTO-2025-03-26-18-10-10.jpg" alt="Camión lavado 4">
+      <img src="/img/PHOTO-2024-12-23-12-45-11.jpg" alt="Camión lavado 5">
+      <img src="/img/PHOTO-2024-12-23-12-45-11(1).jpg" alt="Camión lavado 6">
+      <img src="/img/PHOTO-2024-12-23-12-45-10.jpg" alt="Camión lavado 7">
+      <img src="/img/PHOTO-2024-09-14-18-08-27.jpg" alt="Camión lavado 8">
     </div>
   </section>
 

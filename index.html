@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
   <style>
+    /* Estilos generales */
     * {
       margin: 0;
       padding: 0;
@@ -20,47 +21,55 @@
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
+      min-height: 100vh;
     }
 
+    /* Estilos para el HEADER mejorado */
     header {
-     background-color: black;
-     padding: 10px 20px;
+      background-color: black;
+      padding: 10px 20px;
     }
 
-   .header-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 15px; /* separa el título del menú */
-}
+    .header-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; /* Alinea verticalmente los elementos */
+      margin-bottom: 15px;
+    }
 
-.header-top h1 {
-  font-size: 2rem;
-  font-weight: bold;
-  color: white;
-  text-align: center;
-  flex: 1; /* ocupa el espacio central */
-}
+    .header-top h1 {
+      font-size: 2rem;
+      font-weight: bold;
+      color: white;
+      text-align: center;
+      flex-grow: 1; /* Permite que ocupe todo el espacio disponible */
+      margin: 0;
+    }
 
-.header-top img {
-  height: 50px;
-  width: auto;
-}
+    .header-top img {
+      height: 50px;
+      width: auto; /* Mantiene la proporción de la imagen */
+    }
 
-nav {
-  display: flex;
-  justify-content: center; /* centra horizontal */
-  align-items: center;     /* centra vertical */
-  gap: 40px;               /* separación entre links */
-}
+    nav {
+      display: flex;
+      justify-content: center; /* Centra horizontalmente los enlaces */
+      align-items: center;
+      gap: 40px; /* Espacio uniforme entre los enlaces */
+    }
 
     nav a {
       color: #a80303;
-      margin-left: 1rem;
       text-decoration: none;
       font-weight: 500;
+      transition: color 0.3s ease-in-out;
     }
 
+    nav a:hover {
+      color: #ff5555; /* Cambia de color al pasar el cursor */
+    }
+
+    /* Estilos para las otras secciones de la página */
     .hero {
       background-image: url('https://images.unsplash.com/photo-1622034815241-2c46f4ab1e53');
       background-size: cover;
@@ -84,21 +93,23 @@ nav {
       right: 0;
       bottom: 0;
       background-color: rgba(0, 0, 0, 0.6);
+      z-index: 0;
+    }
+
+    .hero h1, .hero p, .hero a {
+      z-index: 1;
     }
 
     .hero h1 {
       font-size: 3rem;
-      z-index: 1;
     }
 
     .hero p {
       font-size: 1.2rem;
       margin: 1rem 0;
-      z-index: 1;
     }
 
     .hero a {
-      z-index: 1;
       background-color: #ff0000;
       color: #fff;
       padding: 0.8rem 1.5rem;
@@ -111,6 +122,63 @@ nav {
     .hero a:hover {
       background-color: #cc0000;
     }
+
+    /* Estilos para la sección de SENASA */
+    .senasa-info {
+        padding: 2rem;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.6);
+        color: aliceblue;
+    }
+    
+    .senasa-info p {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+
+    .senasa-info img {
+        width: 100px;
+    }
+
+    /* Estilos para el FOOTER */
+    footer {
+        background-color: #000;
+        color: white;
+        text-align: center;
+        padding: 1rem 0;
+        margin-top: 2rem;
+    }
+
+    footer p {
+        margin-bottom: 0.5rem;
+    }
+
+    footer div {
+        font-size: 1.5rem;
+    }
+
+    footer a {
+        color: white;
+        margin: 0 10px;
+        text-decoration: none;
+        transition: color 0.3s ease-in-out;
+    }
+
+    footer a:hover {
+        color: #ddd;
+    }
+
+    /* Media queries para adaptar el diseño a pantallas más pequeñas */
+    @media (max-width: 768px) {
+      .header-top h1 {
+        font-size: 1.5rem;
+      }
+
+      nav {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -118,40 +186,36 @@ nav {
   <div class="header-top">
     <img src="img/logo1.jpeg" alt="Logo izquierda">
     <h1>LAVADERO CHARLY</h1>
-    <img src="img/logo1.jpeg" width="2000"     alt="Logo derecha">
+    <img src="img/logo1.jpeg" alt="Logo derecha">
   </div>
   <nav>
-    <a href="#inicio">INICIO</a>
-    <a href="#servicios">SERVICIOS</a>
-    <a href="#contacto">CONTACTO</a>
-    <a href="#reseñas">RESEÑAS</a>
-    <a href="#trabajo">NUESTRO TRABAJO</a>
-    <a href="#obras">OBRAS</a>
-    <a href="#extras">EXTRAS</a>
+    <a href="index.html">INICIO</a>
+    <a href="pages/servicios.html">SERVICIOS</a>
+    <a href="pages/contacto.html">CONTACTO</a>
+    <a href="pages/reseñas.html">RESEÑAS</a>
+    <a href="pages/nuestrotrabajo.html">NUESTRO TRABAJO</a>
+    <a href="pages/remodelaciones.html">OBRAS</a>
+    <a href="pages/servicios-extra.html">EXTRAS</a>
   </nav>
 </header>
 
-
-
-
-  <section style="padding: 2rem; text-align: center;background-color: rgba(0, 0, 0, 0.6)">
-  <p style="font-size: 1.2rem; margin-bottom: 1rem; color: aliceblue;">
+<section class="senasa-info">
+  <p>
     Establecimiento habilitado por <strong>SENASA</strong> – Registro Nº 883
   </p>
-  <img src="../img/senasa-seeklogo.png" alt="" style="width: 100px;">
+  <img src="../img/senasa-seeklogo.png" alt="Logo de SENASA">
 </section>
 
-
-  <section class="hero">
-    <h1>Lavado Profesional de Camiones</h1>
-    <p>Porque tu camión lo merece: limpieza profesional, rápida y detallada.</p>
-    <a href="/pages/contacto.html">Reservá tu lavado</a>
-  </section>
+<section class="hero">
+  <h1>Lavado Profesional de Camiones</h1>
+  <p>Porque tu camión lo merece: limpieza profesional, rápida y detallada.</p>
+  <a href="/pages/contacto.html">Reservá tu lavado</a>
+</section>
 </body>
 
-<footer style="background-color: #000; color: white; text-align: center; padding: 1rem 0; margin-top: 2rem;">
-  <p style="margin-bottom: 0.5rem;">Seguinos en nuestras redes</p>
-  <div style="font-size: 1.5rem;">
+<footer>
+  <p>Seguinos en nuestras redes</p>
+  <div>
     <a href="https://www.instagram.com/lavaderocharlysaladillo" target="_blank" style="color: white; margin: 0 10px;">
       <i class="fab fa-instagram"></i>
     </a>
@@ -164,4 +228,4 @@ nav {
   </div>
 </footer>
 
-</html>
+</html><

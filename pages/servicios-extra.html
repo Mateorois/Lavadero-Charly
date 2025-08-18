@@ -21,27 +21,52 @@
       color: #000;
     }
 
+      /* Estilos para el HEADER mejorado */
     header {
-      background-color: #000;
-      color: #fff;
-      padding: 1rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      background-color: black;
+      padding: 10px 20px;
     }
 
-    .logo {
-      font-size: 1.5rem;
-      font-weight: 700;
-      color: #ff0000;
+    .header-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; /* Alinea verticalmente los elementos */
+      margin-bottom: 15px;
+    }
+
+    .header-top h1 {
+      font-size: 2rem;
+      font-weight: bold;
+      color: white;
+      text-align: center;
+      flex-grow: 1; /* Permite que ocupe todo el espacio disponible */
+      margin: 0;
+    }
+
+    .header-top img {
+      height: 50px;
+      width: auto; /* Mantiene la proporción de la imagen */
+    }
+
+    nav {
+      display: flex;
+      justify-content: center; /* Centra horizontalmente los enlaces */
+      align-items: center;
+      gap: 40px; /* Espacio uniforme entre los enlaces */
     }
 
     nav a {
-      color: #fff;
-      margin-left: 1rem;
+      color: #a80303;
       text-decoration: none;
       font-weight: 500;
+      transition: color 0.3s ease-in-out;
     }
+
+    nav a:hover {
+      color: #ff5555; /* Cambia de color al pasar el cursor */
+    }
+
+
 
     section {
       padding: 4rem 2rem;
@@ -70,18 +95,23 @@
 </head>
 
 <body>
-  <header>
-    <div class="logo">LAVADERO CHARLY</div>
-    <nav>
-      <a href="../index.html">Inicio</a>
-      <a href="servicios.html">Servicios</a>
-      <a href="contacto.html">Contacto</a>
-      <a href="reseñas.html">Reseñas</a>
-      <a href="nuestrotrabajo.html">Nuestro Trabajo</a>
-      <a href="remodelaciones.html">Obras</a>
-      <a href="extras.html">Extras</a>
-    </nav>
-  </header>
+<header>
+  <div class="header-top">
+    <img src="img/logo1.jpeg" alt="Logo izquierda">
+    <h1>LAVADERO CHARLY</h1>
+    <img src="img/logo1.jpeg" alt="Logo derecha">
+  </div>
+  <nav>
+    <a href="../index.html">INICIO</a>
+    <a href="../pages/servicios.html">SERVICIOS</a>
+    <a href="../pages/contacto.html">CONTACTO</a>
+    <a href="../pages/reseñas.html">RESEÑAS</a>
+    <a href="../pages/nuestrotrabajo.html">NUESTRO TRABAJO</a>
+    <a href="../pages/remodelaciones.html">OBRAS</a>
+    <a href="../pages/servicios-extra.html">EXTRAS</a>
+  </nav>
+</header>
+
 
   <section>
     <h2>Servicios Extra</h2>
