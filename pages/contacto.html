@@ -119,6 +119,12 @@
   gtag('js', new Date());
 
   gtag('config', 'AW-18408332782');
+    <!-- Event snippet for Contacto conversion page -->
+  gtag('event', 'conversion', {
+      'send_to': 'AW-18408332782/1BZwCIjPhukcEO6748lE',
+      'value': 1.0,
+      'currency': 'ARS'
+  });
 </script>
 </head>
 
@@ -145,7 +151,13 @@
     <p>📍 Dirección: Ruta Nacional 205 y Prov 51, Saladillo</p>
     <p>🕒 Horarios: 24hs</p>
     <p>📞 Teléfono: 9 2344 41-0605</p>
-    <p>📱 WhatsApp: <a href="https://wa.me/92344410605">Contactanos ahora</a></p>
+    <p>📱 WhatsApp:<a 
+  href="https://wa.me/92344410605" 
+  target="_blank" 
+  onclick="return gtag_report_conversion('https://wa.me/92344410605');"
+>
+  Contactanos ahora
+</a></p>
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d107020.05224855088!2d-59.91273474602906!3d-35.6856405669782!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bde117392662e5%3A0x3211663afc19116e!2sLavadero%20Charly%20Saladillo!5e0!3m2!1ses-419!2sar!4v1752687976464!5m2!1ses-419!2sar"
       width="600" height="450" style="border:0;" allowfullscreen loading="lazy"
@@ -160,7 +172,7 @@
     <a href="https://www.instagram.com/lavaderocharlysaladillo" target="_blank" style="color: white; margin: 0 10px;">
       <i class="fab fa-instagram"></i>
     </a>
-    <a href="https://wa.me/1130473749" target="_blank" style="color: white; margin: 0 10px;">
+    <a href="https://wa.me/92344410605" target="_blank" onclick="return gtag_report_conversion('https://wa.me/92344410605');" style="color: white; margin: 0 10px;">
       <i class="fab fa-whatsapp"></i>
     </a>
     <a href="https://www.tiktok.com/@lavaderocharlysaladillo" target="_blank" style="color: white; margin: 0 10px;">
