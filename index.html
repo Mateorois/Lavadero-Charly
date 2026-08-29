@@ -24,21 +24,30 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18408332782">
-</script>
+ <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18408332782"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
   gtag('config', 'AW-18408332782');
-  <!-- Event snippet for Contacto conversion page -->
-  gtag('event', 'conversion', {
-      'send_to': 'AW-18408332782/1BZwCIjPhukcEO6748lE',
-      'value': 1.0,
-      'currency': 'ARS'
-  });
+
+  // Función para disparar la conversión SOLO al hacer clic en WhatsApp
+  function gtag_report_conversion(url) {
+    var callback = function () {
+      if (typeof(url) != 'undefined') {
+        window.location = url;
+      }
+    };
+    gtag('event', 'conversion', {
+        'send_to': 'AW-18408332782/1BZwCiJPhukcEO67481E',
+        'value': 1.0,
+        'currency': 'ARS',
+        'event_callback': callback
+    });
+    return false;
+  }
 </script>
 </head>
 
